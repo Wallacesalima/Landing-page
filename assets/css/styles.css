@@ -2,11 +2,12 @@
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1.5fr;
-    gap: var(--gap) ;
+    gap: var(--gap);
     min-height: 100vh;
 }
 
-.home-text-content, .home-img {
+.home-text-content,
+.home-img {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -16,7 +17,7 @@
     max-width: 100%;
     height: auto;
 }
- 
+
 .intro-content {
     max-width: 64rem;
     display: flex;
@@ -38,6 +39,7 @@
 .grid-main-headinbg {
     margin-bottom: 1rem;
 }
+
 .grid-description {
     padding-bottom: 9rem;
 }
@@ -45,7 +47,7 @@
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: var(--gap) ;
+    gap: var(--gap);
     counter-reset: grid-counter;
 }
 
@@ -80,11 +82,12 @@
 }
 
 .gallery-img img:hover {
-    transform: translate(-3%, 3%) scale(1.2) rotate(5deg);;
+    transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
+    ;
 }
 
 .contact-form {
-    grid-column: span 2 ;
+    grid-column: span 2;
 }
 
 .contact-form img {
@@ -106,16 +109,17 @@
     text-align: left;
     margin-bottom: 2rem;
 }
+
 .form-group {
     flex: 1 1 32rem;
 }
 
-.form-group label{
+.form-group label {
     display: block;
     margin-bottom: 1rem;
 }
 
-.form-group input, 
+.form-group input,
 .form-group textarea {
     border: none;
     font-size: 3rem;
@@ -124,10 +128,12 @@
     width: 100%;
     outline: none;
 }
-.form-group input:focus, 
+
+.form-group input:focus,
 .form-group textarea:focus {
-    box-shadow: 1px 1px 10px 3px #d9f966 ;
+    box-shadow: 1px 1px 10px 3px #d9f966;
 }
+
 .form-group button {
     border: 0.5rem solid #fff;
     background: none;
@@ -156,23 +162,26 @@ body .full-width-message {
     text-align: center;
     font-size: 1.6rem;
 }
+
 .footer a {
     color: var(--primary-color);
 }
+
 .footer p {
     margin: 0;
     padding: 3rem;
 }
+
 .heart {
     color: #f00;
 }
 
-.close-menu{
- display: none;
+.close-menu {
+    display: none;
 }
 
 .back-to-top {
-    position:fixed ;
+    position: fixed;
     bottom: 1rem;
     right: 1rem;
     background: #fff;
@@ -188,7 +197,9 @@ body .full-width-message {
 }
 
 @media (max-width: 800px) {
-    .home-content, .grid{
+
+    .home-content,
+    .grid {
         grid-template-columns: 1fr;
     }
 
@@ -208,10 +219,11 @@ body .full-width-message {
 
     .menu {
         bottom: 0;
-         text-align: center;
+        text-align: center;
     }
 
-    .menu-content, .menu-content ul {
+    .menu-content,
+    .menu-content ul {
         flex-direction: column;
         justify-content: center;
     }
@@ -219,6 +231,7 @@ body .full-width-message {
     .menu-content {
         height: 100vh;
     }
+
     .menu {
         display: none;
     }
@@ -249,16 +262,16 @@ body .full-width-message {
     }
 
     .close-menu:checked~.close-menu-label::after {
-        content:'×' ;
+        content: '×';
 
     }
 
-    .menu-spacing{
+    .menu-spacing {
         display: none;
     }
 
     .intro-content h2 {
         font-size: 4rem;
     }
-    
+
 }
